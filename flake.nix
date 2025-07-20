@@ -22,12 +22,10 @@
     homeConfigurations = {
       sammy = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./home.nix ];
+        modules = [
+        ./home.nix
+        ];
       };
     };
-
-    imports = [
-      ./alias.nix
-    ];
   };
 }

@@ -1,4 +1,8 @@
 { config, pkgs, lib, ... }: {
+  imports = [
+    ./pywal.nix
+  ];
+
   home = {
     username = "sammy";
     homeDirectory = "/home/sammy";

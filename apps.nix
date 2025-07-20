@@ -11,7 +11,6 @@
     nixpkgs.config.allowUnfree = true;
     environment.variables.UV_SYSTEM_PYTHON = "1";
 
-
     environment.systemPackages = with pkgs; [
         kitty
         git
