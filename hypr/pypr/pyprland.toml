@@ -1,0 +1,10 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term]
+command = "alacritty --class scratchpad"
+class = "scratchpad"
+animation = "fromTop"
+
+[workspaces.10]
+open = ["spotify"]
