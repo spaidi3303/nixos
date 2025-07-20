@@ -12,39 +12,6 @@
       fi
     '';
     enableNixpkgsReleaseCheck = false;
-
-    file = {
-      ".config/hypr/hyprland.conf".text = ''
-        source = /home/sammy/hypr/hyprland.conf
-        '';
-
-      ".config/fish/config.fish".text = ''
-        set -g fish_greeting ""
-      '';
-
-      ".config/hypr/hyprpaper.conf".text = ''
-        preload=~/hypr/wallpaper/nixos-chan.png
-        ipc = true
-        wallpaper=,~/hypr/wallpaper/nixos-chan.png
-      '';
-
-      ".config/fish/functions/gcp.fish".text = ''
-        function gcp
-          set -l msg $argv
-          git add .
-          git commit -m "$msg"
-          git push
-        end
-      '';
-    };
-  };
-
-
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      rebuild = "echo 'test'";
-    };
   };
 
   programs.git = {
