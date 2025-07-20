@@ -35,6 +35,10 @@
         uv        
         python313
         appimage-run
+        jdk8
+        jdk17
+        jdk21
+
     ];
 
 
