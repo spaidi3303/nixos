@@ -41,6 +41,10 @@
         docker-compose
         jetbrains.idea-community
         vim
+        uv        
+
+
+
     ];
 
 
