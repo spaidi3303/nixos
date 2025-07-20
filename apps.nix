@@ -42,7 +42,7 @@
         jetbrains.idea-community
         vim
         uv        
-
+        python3
 
 
     ];
