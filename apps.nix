@@ -9,6 +9,7 @@
 
     programs.hyprland.enable = true;
     nixpkgs.config.allowUnfree = true;
+    environment.variables.UV_SYSTEM_PYTHON = "1";
 
 
     environment.systemPackages = with pkgs; [
@@ -42,7 +43,7 @@
         jetbrains.idea-community
         vim
         uv        
-        python3
+        python313
 
 
     ];
