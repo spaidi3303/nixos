@@ -5,6 +5,3 @@ plugins = ["scratchpads"]
 command = "alacritty --class scratchpad"
 class = "scratchpad"
 animation = "fromTop"
-
-[workspaces.10]
-open = ["spotify"]
