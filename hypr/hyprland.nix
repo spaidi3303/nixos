@@ -5,15 +5,11 @@ let
 in {
   services.xserver.enable = true;
 
-  services.xserver.windowManager.hyprland = {
-    enable = true;
-    package = pkgs.hyprland;
-  };
+  programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
     hyprland
     hyprpaper
-    kitty
     hyprshot
     hyprpanel
   ];
