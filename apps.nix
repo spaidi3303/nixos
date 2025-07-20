@@ -34,7 +34,7 @@
         vim
         uv        
         python313
-
+        appimage-run
     ];
 
 
