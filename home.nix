@@ -1,6 +1,5 @@
 { config, pkgs, lib, ... }: {
   imports = [
-    ./pywal.nix
   ];
 
   home = {
