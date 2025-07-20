@@ -6,13 +6,10 @@
         tunMode.setuid = true;
     };
 
-
-    programs.hyprland.enable = true;
     nixpkgs.config.allowUnfree = true;
     environment.variables.UV_SYSTEM_PYTHON = "1";
 
     environment.systemPackages = with pkgs; [
-        kitty
         git
         chromium
         nautilus
@@ -20,14 +17,11 @@
         gnome-terminal
         rofi
         playerctl
-        hyprpanel
         brightnessctl
         ntfs3g
-        hyprshot
         home-manager
         alacritty
         wget
-        hyprpaper
         os-prober
         efibootmgr
         cava
