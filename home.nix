@@ -14,10 +14,4 @@
     enableNixpkgsReleaseCheck = false;
   };
 
-  programs.git = {
-    enable = true;
-    userName = "sammy";
-    userEmail = "lednevdosa@gmail.com";
-  };
-
 }

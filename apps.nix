@@ -10,12 +10,10 @@
     environment.variables.UV_SYSTEM_PYTHON = "1";
 
     environment.systemPackages = with pkgs; [
-        git
         chromium
         nautilus
         ayugram-desktop
         gnome-terminal
-        rofi
         playerctl
         brightnessctl
         ntfs3g
@@ -26,7 +24,6 @@
         efibootmgr
         cava
         android-studio
-        gh
         libsForQt5.kate
         libreoffice-qt6-fresh
         jetbrains.pycharm-community
