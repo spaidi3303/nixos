@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./hypr/hyprland.nix
     ./services.nix
     ./fish.nix
     ./boot.nix

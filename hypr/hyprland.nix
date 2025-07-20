@@ -6,13 +6,16 @@ in
 {
   programs.hyprland = {
     enable = true;
+    withUWSM = true;
   };
 
   home.file.".config/hypr/hyprland.conf".source = hyprConf;
 
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     hyprland
     hyprpaper
     kitty
-  ];
+    hyprshot
+    hyprpanel
+    ];
 }
