@@ -34,6 +34,7 @@
         vim
         uv        
         python313
+        python313Packages.pip
         appimage-run
         jdk8
         jdk17
