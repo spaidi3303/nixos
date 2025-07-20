@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./rofi.nix
+    ./rofi/rofi.nix
     ./hypr/hyprland.nix
     ./services.nix
     ./fish.nix
