@@ -8,6 +8,13 @@ let
   cfg = config.programs.pywal;
 in
 {
+  options = {
+    programs.pywal = {
+      enable = lib.mkEnableOption "pywal";
+
+      package = lib.mkPackageOption pkgs "pywal" { };
+    };
+  };
 
   config = lib.mkIf cfg.enable {
 
@@ -17,11 +24,11 @@ in
       # Import colorscheme from 'wal' asynchronously
       # &   # Run the process in the background.
       # ( ) # Hide shell job control messages.
-      (cat ~/.cache/wal/sequences &)
+      (cat ${config.xdg.cacheHome}/wal/sequences &)
     '';
 
     programs.kitty.extraConfig = lib.mkBefore ''
-      include ~/.cache/wal/colors-kitty.conf
+      include ${config.xdg.cacheHome}/wal/colors-kitty.conf
     '';
 
     programs.rofi.theme."@import" = "${config.xdg.cacheHome}/wal/colors-rofi-dark.rasi";
