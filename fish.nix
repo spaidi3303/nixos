@@ -2,7 +2,7 @@
 
 let
   fishConfig = ''
-    set -g fish_greeting "hello Dexter Morgan"
+    set -g fish_greeting ""
   '';
 
   gcpFunction = ''
