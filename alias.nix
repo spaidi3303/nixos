@@ -1,7 +1,7 @@
 {
     environment.shellAliases = {
         nixcf="sudo nano /home/sammy/nixos/configuration.nix";
-        nixreb="sudo nixos-rebuild switch --flake /home/sammy/nixos/ --install-bootloader";
+        nixreb="sudo nixos-rebuild switch --flake /home/sammy/nixos/";
         homereb="home-manager switch --flake /home/sammy/nixos/";
         cf="cd ~/.config";
         c="clear";
