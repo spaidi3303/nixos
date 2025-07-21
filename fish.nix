@@ -23,6 +23,8 @@ in
   ];
 
   system.activationScripts.setupFishConfig.text = ''
+    unlink /home/sammy/.config/fish/config.fish
+    unlink /home/sammy/.config/fish/functions/gcp.fish
     mkdir -p /home/sammy/.config/fish/functions
     echo '${fishConfig}' > /home/sammy/.config/fish/config.fish
     echo '${gcpFunction}' > /home/sammy/.config/fish/functions/gcp.fish
