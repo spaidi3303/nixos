@@ -26,4 +26,6 @@ in {
     chown -R sammy:users /home/sammy/.config/hypr
   '';
 
+
+
 }
