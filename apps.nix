@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
 
     programs.nekoray = {
         enable = true;
@@ -8,7 +8,6 @@
 
     nixpkgs.config.allowUnfree = true;
     environment.variables.UV_SYSTEM_PYTHON = "1";
-
     environment.systemPackages = with pkgs; [
         chromium
         nautilus
@@ -40,6 +39,8 @@
         jdk17
         jdk21
         kitty
+        pywal
+        (inputs.swww.packages.${pkgs.system}.swww)
     ];
 
 
