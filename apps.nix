@@ -42,6 +42,7 @@
         pywal
         (inputs.swww.packages.${pkgs.system}.swww)
         waypaper
+        alembic
     ];
 
 

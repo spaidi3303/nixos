@@ -13,7 +13,7 @@
     ./hardware-configuration.nix
   ];
 
-
+  virtualisation.waydroid.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];  
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
