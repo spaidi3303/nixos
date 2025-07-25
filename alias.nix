@@ -8,12 +8,7 @@
         sshp="ssh root@lednevs.ru -p 1009";
         hs="history | grep ";
         apps="nano ~/nixos/apps.nix";
-        lb="LD_LIBRARY_PATH=/nix/store/rlp72zk5gc3ilifg9hqsm2y0h62ci2m4-appimage-run-fhsenv-rootfs/usr/lib64 "
-
-
-
-
-
+        lb="LD_LIBRARY_PATH=/nix/store/rlp72zk5gc3ilifg9hqsm2y0h62ci2m4-appimage-run-fhsenv-rootfs/usr/lib64 ";
 
 
     };
