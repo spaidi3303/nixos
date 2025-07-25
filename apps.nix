@@ -20,6 +20,7 @@
         alacritty
         wget
         os-prober
+        gcc
         efibootmgr
         cava
         android-studio
@@ -43,6 +44,7 @@
         (inputs.swww.packages.${pkgs.system}.swww)
         waypaper
         alembic
+        playwright
     ];
 
 
