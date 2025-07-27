@@ -1,5 +1,6 @@
-{
+{pkgs, inputs, ... }: {
     services = {
+        udev.packages = with pkgs; [ android-udev-rules ];
         blueman.enable = true;
         dbus.enable = true;
         printing.enable = true;
@@ -13,5 +14,6 @@
         };
 
     };
+  programs.adb.enable = true;
 
 }

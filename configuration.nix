@@ -46,7 +46,7 @@
   users.users.sammy = {
     isNormalUser = true;
     description = "sammy";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "plugdev"];
     shell = pkgs.fish;
   };
   
